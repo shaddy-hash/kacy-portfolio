@@ -52,7 +52,7 @@ def header(current):
       <a href="index.html#about"{cur('about')}>About</a>
       <div class="dropdown">
         <button aria-haspopup="true">Projects ▾</button>
-        <div class="dropdown-menu">{proj_links}</div>
+        <div class="dropdown-menu"><span class="menu-label">Projects</span>{proj_links}</div>
       </div>
       <a href="resume.html"{cur('resume.html')}>Resume</a>
       <a href="mailto:{EMAIL}">Contact</a>
@@ -373,9 +373,8 @@ res += f"""<div class="wrap" style="--c:var(--stone)">
         <li>SkyView Academy K–12: Board Secretary, maintained board records, reviewed policies, advised leadership on policy updates, 2019–2022.</li>
       </ul></div>
     </div>
-    <p class="thanks">Thank you for exploring my work and my process. Let’s connect! — Kacy</p>
   </div>
-  <div>
+  <div class="r-right">
     <div class="r-block">
       <h3>Design + Technical Skills</h3>
       <div class="r-item"><b>Interior Design</b> – Space planning, FF&amp;E and material selection, specifications, lighting, and NKBA planning guidelines.</div>
@@ -401,6 +400,7 @@ res += f"""<div class="wrap" style="--c:var(--stone)">
         <li>Supervised a five-person design team and presented concepts and business initiatives to corporate board members, and executive leadership.</li></ul></div>
     </div>
   </div>
+  <p class="thanks">Thank you for exploring my work and my process. Let’s connect! — Kacy</p>
 </div>
 </div>
 """
